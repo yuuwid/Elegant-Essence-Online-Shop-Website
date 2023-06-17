@@ -338,11 +338,12 @@
 
         const select = $('#category_field_edit');
 
-        console.log(data_size);
         if (data_size['id_category'] == null) {
             select.append('<option selected value="-1">Pilih Kategori</option>')
         }
 
+        select.children('option').remove();
+        
         categories.forEach(cat => {
             if (data_size['id_category'] != null) {
                 if (cat['slug_category'] == data_size['category']['slug_category']) {
