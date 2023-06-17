@@ -112,7 +112,15 @@ Route::post('/admin/dashboard/list-categories/h/delete/{slug_category}', [Catego
     ->name('admin.h.delete_category');
 
 
+// UKURAN
 Route::get('/admin/dashboard/list-colors-sizes', [ColorSizeManagementController::class, 'list_color_size'])
     ->middleware('auth:web_admin')
     ->name('admin.m.list_color_size');
 
+Route::post('/admin/dashboard/list-colors-sizes/h/add/size', [ColorSizeManagementController::class, 'add_size'])
+    ->middleware('auth:web_admin')
+    ->name('admin.h.add_size');
+
+Route::post('/admin/dashboard/list-colors-sizes/h/add/color', [ColorSizeManagementController::class, 'add_color'])
+    ->middleware('auth:web_admin')
+    ->name('admin.h.add_color');
