@@ -49,7 +49,7 @@
 
     <div class="mb-3">
         <div class="flex justify-between">
-            <h1 class="text-lg font-bold mb-2">Kategori</h1>
+            <h1 class="text-lg font-bold mb-2">Ukuran Kategori</h1>
             <div class="">
                 <button data-modal-target="formAddSizeModal" data-modal-toggle="formAddSizeModal"
                     class="bg-e2-blue-700 hover:bg-e2-green text-white px-1.5 py-0.5 rounded">
@@ -96,37 +96,49 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($sizes as $s)
+                @if (sizeof($sizes))
+                    @foreach ($sizes as $s)
+                        <tr class="bg-white border-b hover:bg-e2-blue-100">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                {{ $s->category != null ? $s->category->category : '-' }}
+                            </th>
+                            <th class="px-6 py-4 text-center">
+                                {{ $s->size }}
+                            </th>
+                            <td class="px-6 py-4 text-center">
+                                {{ $s->variants_count }}
+                            </td>
+                            <td class="px-0 py-4 flex gap-x-2">
+                                <button data-modal-target="formEditSizeModal" data-modal-toggle="formEditSizeModal"
+                                    class="bg-e2-blue-700 hover:bg-e2-blue-base text-white px-1.5 py-0.5 rounded"
+                                    onclick="setIdUpdateSize({{ $s->id_size }})">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button data-modal-target="deleteSizeConfirmModal"
+                                    data-modal-toggle="deleteSizeConfirmModal"
+                                    class="bg-e2-red hover:bg-red-700 text-white px-1.5 py-0.5 rounded "
+                                    onclick="setIdDeleteSize({{ $s->id_size }})">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    @endforeach
+                @else
                     <tr class="bg-white border-b hover:bg-e2-blue-100">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                            {{ $s->category != null ? $s->category->category : '-' }}
+                        <th scope="row" colspan="4" class="text-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            Tidak ada data
                         </th>
-                        <th class="px-6 py-4 text-center">
-                            {{ $s->size }}
-                        </th>
-                        <td class="px-6 py-4 text-center">
-                            {{ $s->variants_count }}
-                        </td>
-                        <td class="px-0 py-4 flex gap-x-2">
-                            <button data-modal-target="formEditSizeModal" data-modal-toggle="formEditSizeModal"
-                                class="bg-e2-blue-700 hover:bg-e2-blue-base text-white px-1.5 py-0.5 rounded"
-                                onclick="setIdUpdateSize({{ $s->id_size }})">
-                                <i class="bi bi-pencil"></i>
-                            </button>
-                            <button data-modal-target="deleteSizeConfirmModal"
-                                data-modal-toggle="deleteSizeConfirmModal"
-                                class="bg-e2-red hover:bg-red-700 text-white px-1.5 py-0.5 rounded "
-                                onclick="setIdDeleteSize({{ $s->id_size }})">
-                                <i class="bi bi-trash"></i>
-                            </button>
-                        </td>
                     </tr>
-                @endforeach
+                @endif
             </tbody>
         </table>
+
+    </div>
+
+    <div class="mt-3">
+        {{ $sizes }}
     </div>
 </div>
-
 
 
 {{-- HELPER MODAL --}}

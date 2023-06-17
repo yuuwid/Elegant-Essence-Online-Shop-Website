@@ -30,10 +30,9 @@ class ColorSizeManagementController extends Controller
                     ->paginate(10);
             }
         } else {
-            $sizes = Size::with('category')->withCount('variants')->paginate(10);
+            $sizes = Size::with('category')->withCount('variants')->paginate(10, ['*'], 'page-sizes');
         }
-        $colors = Color::withCount('variants')->paginate(10);
-
+        $colors = Color::withCount('variants')->paginate(10, ['*'], 'page-colors');
 
         return view('admin.m-color-size.list-color-size', [
             'title' => "Admin | Dashboard",

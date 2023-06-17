@@ -20,6 +20,7 @@ use App\Http\Controllers\ColorSizeManagementController;
 |
 */
 
+// ADMIN AUTHENTICATE
 Route::prefix('admin')
     ->name('admin.')
     ->group(function () {
@@ -37,6 +38,8 @@ Route::prefix('admin')
         Route::get('/auth/logout', [AuthAdminController::class, 'handle_logout'])
             ->name('handle.logout');
     });
+
+
 
 // TRANSAKSI
 Route::get('/admin/transaksi');
@@ -62,7 +65,6 @@ Route::prefix('admin/dashboard/list-produk')
         Route::get('/m/detail', [ProdukManagementController::class, 'index_detail_produk'])
             ->name('detail_produk');
     });
-
 
 
 // PRODUK (h --> Handle) | POST Method
