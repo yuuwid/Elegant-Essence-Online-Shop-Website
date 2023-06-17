@@ -115,3 +115,4 @@ Route::post('/admin/dashboard/list-categories/h/delete/{slug_category}', [Catego
 Route::get('/admin/dashboard/list-colors-sizes', [ColorSizeManagementController::class, 'list_color_size'])
     ->middleware('auth:web_admin')
     ->name('admin.m.list_color_size');
+

@@ -30,13 +30,22 @@ class ColorSizeManagementController extends Controller
         $colors = Color::withCount('variants')->paginate(10);
 
 
-
-
         return view('admin.m-color-size.list-color-size', [
             'title' => "Admin | Dashboard",
             'categories' => $categories,
             'sizes' => $sizes,
             'colors' => $colors,
         ]);
+    }
+
+
+
+
+    // REST API
+    public function get_size_byId($id_size)
+    {
+        $sizes = Size::with('category')
+            ->where('id_size', $id_size)
+            ->paginate(10);
     }
 }
