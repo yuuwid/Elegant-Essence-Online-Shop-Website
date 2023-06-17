@@ -82,9 +82,9 @@
                                     <input type="file" value="" name="logo" id="logoCategoryImageFile"
                                         class="hidden">
                                 </label>
-                                <div id="previewContainer" class="w-32 h-32 bg-cover  cursor-pointer">
+                                <div id="previewContainer" class="w-full h-full bg-cover cursor-pointer">
                                     <img src="/{{ $category->logo }}" id="logoCategoryPreviewImage"
-                                        class="w-32 h-32 bg-cover" alt="Preview Image">
+                                        class="w-full h-full bg-cover object-cover" alt="Preview Image">
                                 </div>
                             </div>
 

@@ -12,4 +12,13 @@ class AdminController extends Controller
             'title' => "Admin | Dashboard"
         ]);
     }
+
+    public function profile()
+    {
+        $user = auth()->user();
+        return view('admin.home.profile', [
+            'title' => "Admin | Profile",
+            'user' => $user,
+        ]);
+    }
 }

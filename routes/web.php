@@ -25,10 +25,6 @@ Route::prefix('admin')
     ->name('admin.')
     ->group(function () {
 
-        Route::get('/', [AdminController::class, 'dashboard'])
-            ->middleware('auth:web_admin')
-            ->name('dashboard');
-
         Route::get('/login', [AuthAdminController::class, 'login_form'])
             ->name('login');
 
@@ -39,6 +35,18 @@ Route::prefix('admin')
             ->name('handle.logout');
     });
 
+Route::prefix('admin')
+    ->middleware('auth:web_admin')
+    ->name('admin.')
+    ->group(function () {
+
+        Route::get('/', [AdminController::class, 'dashboard'])
+            ->name('dashboard');
+
+        Route::get('/profile', [AdminController::class, 'profile'])
+            ->name('profile');
+
+    });
 
 
 // TRANSAKSI
