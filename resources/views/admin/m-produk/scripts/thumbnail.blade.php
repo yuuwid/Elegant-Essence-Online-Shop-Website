@@ -10,7 +10,7 @@
             formData.append('image', file);
 
             var xhr = new XMLHttpRequest();
-            xhr.open('POST', '/api/temp/image/upload', true);
+            xhr.open('POST', '/api/image/temp/upload', true);
 
             const toast_success = $('#toast-upload-success');
             const toast_failed = $('#toast-upload-failed');
@@ -97,7 +97,7 @@
 
         const id_temp = $('#thumbnail_temp_id').val()
         // Open a GET request to fetch the image file
-        xhr_single.open('GET', '/api/temp/image/path/' + id_temp, true);
+        xhr_single.open('GET', '/api/image/temp/path/' + id_temp, true);
 
         // Set the response type to 'blob'
         xhr_single.responseType = 'json';

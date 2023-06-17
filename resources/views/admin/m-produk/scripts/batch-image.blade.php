@@ -14,7 +14,7 @@
         }
 
         const xhr = new XMLHttpRequest();
-        xhr.open('POST', '/api/temp/image/upload/batch', true);
+        xhr.open('POST', '/api/image/temp/upload/batch', true);
 
         xhr.onreadystatechange = function() {
             if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -138,7 +138,7 @@
         const id_batchs = $('#batch_images_temp').val()
 
         // Open a GET request to fetch the image file
-        xhr_batch.open('GET', '/api/temp/image/path/batch/' + id_batchs, true);
+        xhr_batch.open('GET', '/api/image/temp/path/batch/' + id_batchs, true);
 
         // Set the response type to 'blob'
         xhr_batch.responseType = 'json';
