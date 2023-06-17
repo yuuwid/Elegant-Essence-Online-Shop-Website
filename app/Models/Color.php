@@ -14,6 +14,7 @@ class Color extends Model
 
     public $timestamps = false;
 
+    protected $fillable = ['color', 'hex'];
 
     public function variants()
     {

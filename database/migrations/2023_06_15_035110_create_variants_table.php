@@ -23,12 +23,12 @@ return new class extends Migration
 
             $table->tinyInteger('stock')->default(0);
 
-            $table->unsignedSmallInteger('id_size');
-            $table->unsignedSmallInteger('id_color');
+            $table->unsignedSmallInteger('id_size')->nullable();
+            $table->unsignedSmallInteger('id_color')->nullable();
 
             $table->foreign('id_product')->references('id_product')->on('products')->onDelete('cascade');
-            $table->foreign('id_size')->references('id_size')->on('sizes')->onDelete('cascade');
-            $table->foreign('id_color')->references('id_color')->on('colors')->onDelete('cascade');
+            $table->foreign('id_size')->references('id_size')->on('sizes')->onDelete('set null');
+            $table->foreign('id_color')->references('id_color')->on('colors')->onDelete('set null');
         });
     }
 

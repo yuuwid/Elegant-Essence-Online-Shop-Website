@@ -33,4 +33,15 @@ class Variant extends Model
     {
         return $this->belongsTo(Size::class, 'id_size');
     }
+
+    public function carts()
+    {
+        return $this->hasMany(Cart::class, 'id_variant');
+    }
+
+
+    public function detail_transaction()
+    {
+        return $this->hasMany(DetailTransaction::class, 'id_variant');
+    }
 }
