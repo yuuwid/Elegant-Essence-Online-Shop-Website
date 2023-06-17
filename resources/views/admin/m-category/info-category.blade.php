@@ -60,6 +60,10 @@
                         </button>
                     </div>
                 @endif
+                <a href="/admin/dashboard/list-categories" class="text-sm hover:underline hover:text-e2-green">
+                    <i class="bi bi-chevron-left"></i>
+                    Kembali
+                </a>
 
                 <form method="POST" action="/admin/dashboard/list-categories/h/update/{{ $category->slug_category }}"
                     enctype="multipart/form-data">
@@ -145,7 +149,8 @@
                     <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
                         Ingin Menghapus Kategori: {{ $category->category }} ?
                     </h3>
-                    <form action="/admin/dashboard/list-categories/h/delete/{{ $category->slug_category }}" method="post">
+                    <form action="/admin/dashboard/list-categories/h/delete/{{ $category->slug_category }}"
+                        method="post">
                         @csrf
                         <button data-modal-hide="popup-modal-confirm-delete" type="button"
                             class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">
