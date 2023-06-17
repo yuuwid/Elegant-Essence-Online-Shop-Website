@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ColorSizeManagementController;
 use App\Http\Controllers\UploadImageController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,6 +23,7 @@ Route::get('/temp/image/path/{id}', [UploadImageController::class, 'temp_image_b
 Route::post('/temp/image/upload/batch', [UploadImageController::class, 'upload_batch_to_temp']);
 Route::get('/temp/image/path/batch/{ids}', [UploadImageController::class, 'temp_batch_image_by_ids']);
 
+Route::get('/sizes/{id_size}', [ColorSizeManagementController::class, 'get_size_byId']);
 
 Route::get('/test', [UploadImageController::class, 'test']);
 Route::post('/test', [UploadImageController::class, 'test_post']);
