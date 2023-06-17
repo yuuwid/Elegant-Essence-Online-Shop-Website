@@ -14,6 +14,7 @@ class Size extends Model
 
     public $timestamps = false;
 
+    protected $fillable = ['size', 'id_category'];
 
     public function variants()
     {
