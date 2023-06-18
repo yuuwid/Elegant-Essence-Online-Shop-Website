@@ -125,4 +125,10 @@ class CategoryManagementController extends Controller
             'msg' => "Berhasil <b>Menghapus Data</b>."
         ]]);
     }
+
+
+    public function api_categories()
+    {
+        return response()->json(Category::all());
+    }
 }

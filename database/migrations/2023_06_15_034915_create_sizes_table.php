@@ -16,10 +16,9 @@ return new class extends Migration
         Schema::create('sizes', function (Blueprint $table) {
             $table->smallIncrements('id_size');
             $table->string('size', 50);
-            $table->unsignedSmallInteger('id_category');
+            $table->unsignedSmallInteger('id_category')->nullable();
 
-            $table->foreign('id_category')->references('id_category')->on('categories')->onDelete('cascade');
-
+            $table->foreign('id_category')->references('id_category')->on('categories')->onDelete('set null');
         });
     }
 

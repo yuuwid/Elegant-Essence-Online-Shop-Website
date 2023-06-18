@@ -48,8 +48,8 @@
         {{-- Produk List --}}
         <div class="w-full px-4">
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg mb-5">
-                <table class="w-full text-sm text-left text-gray-500">
-                    <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                <table class="w-full text-sm text-left  text-gray-500">
+                    <thead class="text-xs text-white uppercase !bg-e2-blue-base">
                         <tr>
                             <th scope="col" class="px-6 py-3">
                                 Product name
