@@ -26,35 +26,35 @@
                 </button>
                 <ul id="dropdown-transaksi-submenu-sidebar" class="hidden py-2 space-y-2">
                     <li>
-                        <a href="/admin/dashboard/transaksi-baru"
+                        <a href="/admin/dashboard/transaksi/baru"
                             class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-5 group hover:bg-gray-100">
                             <i class="bi bi-inboxes"></i>
                             <span class="ml-2">Transaksi Masuk</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/admin/dashboard/transaksi-diproses"
+                        <a href="/admin/dashboard/transaksi/diproses"
                             class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-5 group hover:bg-gray-100">
                             <i class="bi bi-textarea"></i>
                             <span class="ml-2">Diproses</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/admin/dashboard/transaksi-dikirim"
+                        <a href="/admin/dashboard/transaksi/dikirim"
                             class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-5 group hover:bg-gray-100">
                             <i class="bi bi-mailbox"></i>
                             <span class="ml-2">Dikirim</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/admin/dashboard/transaksi-selesai"
+                        <a href="/admin/dashboard/transaksi/selesai"
                             class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-5 group hover:bg-gray-100">
                             <i class="bi bi-check2-square"></i>
                             <span class="ml-2">Selesai</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/admin/dashboard/list-transaksi"
+                        <a href="/admin/dashboard/transaksi"
                             class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-5 group hover:bg-gray-100">
                             <i class="bi bi-archive"></i>
                             <span class="ml-2">Daftar Transaksi</span>

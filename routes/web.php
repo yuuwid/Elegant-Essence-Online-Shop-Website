@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminTransaksiController;
 use App\Http\Controllers\AuthAdminController;
 use App\Http\Controllers\BrandManagementController;
 use App\Http\Controllers\ProdukManagementController;
@@ -45,12 +46,20 @@ Route::prefix('admin')
 
         Route::get('/profile', [AdminController::class, 'profile'])
             ->name('profile');
-
     });
 
 
 // TRANSAKSI
-Route::get('/admin/transaksi');
+Route::prefix('admin/dashboard/transaksi')
+    ->middleware('auth:web_admin')
+    ->name('admin.transaksi.')
+    ->group(function () {
+        Route::get('/', [AdminTransaksiController::class, 'list_transaksi']);
+        Route::get('/baru', [AdminTransaksiController::class, 'list_transaksi_baru']);
+        Route::get('/diproses', [AdminTransaksiController::class, 'list_transaksi_diproses']);
+        Route::get('/dikirim', [AdminTransaksiController::class, 'list_transaksi_dikirim']);
+        Route::get('/selesai', [AdminTransaksiController::class, 'list_transaksi_selesai']);
+    });
 
 
 // PRODUK (m --> Manage) | GET Method

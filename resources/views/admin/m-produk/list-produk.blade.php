@@ -75,10 +75,10 @@
                                     {{ $p->product_name }}
                                 </th>
                                 <td class="px-6 py-4">
-                                    {{ $p->brand != null ? $p->brand->brand : "Tidak ada Merk" }}
+                                    {{ $p->brand != null ? $p->brand->brand : 'Tidak ada Merk' }}
                                 </td>
                                 <td class="px-6 py-4">
-                                    {{ $p->category != null ? $p->category->category : "Tidak ada Kategori" }}
+                                    {{ $p->category != null ? $p->category->category : 'Tidak ada Kategori' }}
                                 </td>
                                 <td class="px-6 py-4">
                                     {{ sizeof($p->variants) }}
