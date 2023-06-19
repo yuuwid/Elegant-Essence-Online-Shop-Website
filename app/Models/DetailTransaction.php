@@ -10,7 +10,7 @@ class DetailTransaction extends Model
     use HasFactory;
 
     protected $table = "detail_transaction";
-    protected $primaryKey = null;
+    // protected $primaryKey = null;
 
     public $timestamps = false;
 
