@@ -33,7 +33,7 @@ class ReviewSeeder extends Seeder
 
                 foreach ($products as $p) {
                     Review::create([
-                        'title' => $faker->sentence(random_int(1, 3)),
+                        'title' => $faker->sentence(random_int(1, 2)),
                         'comment' => $faker->sentences(random_int(1, 3), true),
                         'rating' => random_int(3, 5),
                         'id_user' => $i,
