@@ -20,6 +20,15 @@ use App\Http\Controllers\ColorSizeManagementController;
 |
 */
 
+Route::get('/login', function () {
+    return view('auth.user.login.index');
+});
+Route::get('/registrasi', function () {
+    return view('auth.user.registrasi.index');
+});
+
+
+
 Route::get('/admin/login', [AuthAdminController::class, 'login_form'])
     ->name('admin.login');
 Route::post('/admin/auth/login', [AuthAdminController::class, 'handle_login'])
