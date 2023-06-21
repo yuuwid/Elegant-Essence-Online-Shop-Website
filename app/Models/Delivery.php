@@ -17,6 +17,7 @@ class Delivery extends Model
     protected $fillable = [
         'id_expedition',
         'recipient_name',
+        'recipient_phone_number',
         'id_address',
     ];
 

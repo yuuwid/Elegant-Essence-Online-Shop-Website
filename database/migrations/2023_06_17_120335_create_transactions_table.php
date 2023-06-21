@@ -17,14 +17,11 @@ return new class extends Migration
             $table->id('id_transaction');
 
             $table->unsignedBigInteger('id_user')->nullable();
-            $table->timestamp('date_transaction')->useCurrent();
-            $table->unsignedTinyInteger('id_status_transaction');
 
             $table->unsignedBigInteger('id_delivery');
             $table->unsignedSmallInteger('id_payment');
 
             $table->foreign('id_user')->references('id_user')->on('users')->onDelete('set null');
-            $table->foreign('id_status_transaction')->references('id_status_transaction')->on('status_transactions')->onDelete('restrict');
             $table->foreign('id_delivery')->references('id_delivery')->on('deliveries')->onDelete('restrict');
             $table->foreign('id_payment')->references('id_payment')->on('payments')->onDelete('restrict');
 

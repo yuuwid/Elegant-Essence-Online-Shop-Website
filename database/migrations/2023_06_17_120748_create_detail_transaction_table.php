@@ -19,6 +19,7 @@ return new class extends Migration
 
             $table->unsignedBigInteger('id_variant')->nullable();
             $table->smallInteger('qty')->default(0);
+            $table->smallInteger('discount')->default(0);
 
             $table->foreign('id_product')->references('id_product')->on('products')->onDelete('set null');
             $table->foreign('id_transaction')->references('id_transaction')->on('transactions')->onDelete('restrict');

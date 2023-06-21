@@ -17,7 +17,8 @@ return new class extends Migration
             $table->id('id_delivery');
 
             $table->unsignedInteger('id_expedition');
-            $table->string('recipient_name');
+            $table->string('recipient_name', 150);
+            $table->string('recipient_phone_number', 30);
             $table->unsignedBigInteger('id_address');
 
             $table->foreign('id_expedition')->references('id_expedition')->on('expeditions')->onDelete('restrict');
