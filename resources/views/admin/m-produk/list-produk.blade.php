@@ -48,8 +48,8 @@
         {{-- Produk List --}}
         <div class="w-full px-4">
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg mb-5">
-                <table class="w-full text-sm text-left text-gray-500">
-                    <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                <table class="w-full text-sm text-left  text-gray-500">
+                    <thead class="text-xs text-white uppercase !bg-e2-blue-base">
                         <tr>
                             <th scope="col" class="px-6 py-3">
                                 Product name
@@ -70,15 +70,15 @@
                     </thead>
                     <tbody>
                         @foreach ($products as $p)
-                            <tr class="bg-white border-b">
+                            <tr class="bg-white border-b hover:bg-e2-blue-100">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     {{ $p->product_name }}
                                 </th>
                                 <td class="px-6 py-4">
-                                    {{ $p->brand != null ? $p->brand->brand : "Tidak ada Merk" }}
+                                    {{ $p->brand != null ? $p->brand->brand : 'Tidak ada Merk' }}
                                 </td>
                                 <td class="px-6 py-4">
-                                    {{ $p->category != null ? $p->category->category : "Tidak ada Kategori" }}
+                                    {{ $p->category != null ? $p->category->category : 'Tidak ada Kategori' }}
                                 </td>
                                 <td class="px-6 py-4">
                                     {{ sizeof($p->variants) }}

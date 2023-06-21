@@ -21,7 +21,7 @@ return new class extends Migration
             $table->unsignedInteger('price');
             $table->unsignedTinyInteger('discount')->default(0);
 
-            $table->tinyInteger('stock')->default(0);
+            $table->smallInteger('stock')->default(0);
 
             $table->unsignedSmallInteger('id_size')->nullable();
             $table->unsignedSmallInteger('id_color')->nullable();

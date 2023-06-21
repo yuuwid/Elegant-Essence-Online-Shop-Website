@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->id('id_image');
-            $table->string('path_image', 160);
+            $table->string('path_image', 160)->default('root/no-image.png');
             $table->unsignedBigInteger('id_product');
             $table->boolean('thumnbail')->default(false);
 

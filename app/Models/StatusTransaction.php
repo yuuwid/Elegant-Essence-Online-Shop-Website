@@ -18,9 +18,8 @@ class StatusTransaction extends Model
         'status',
     ];
 
-
-    public function transaction()
+    public function transaction_track()
     {
-        return $this->hasMany(Transaction::class, 'id_status_transaction');
+        return $this->hasMany(TransactionTrack::class, 'id_status_transaction');
     }
 }

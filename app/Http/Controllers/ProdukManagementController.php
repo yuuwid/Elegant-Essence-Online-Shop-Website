@@ -22,7 +22,7 @@ class ProdukManagementController extends Controller
     public function list_produk()
     {
         $products = Product::with(['brand', 'category', 'images', 'variants'])
-            ->paginate(5);
+            ->paginate(25);
         return view('admin.m-produk.list-produk', [
             'title' => "Admin | Dashboard",
             'products' => $products,
@@ -35,7 +35,7 @@ class ProdukManagementController extends Controller
 
         $products = Product::with(['brand', 'category', 'images', 'variants'])
             ->where('product_name', 'like', '%' . $keyword . '%')
-            ->paginate(5);
+            ->paginate(25);
 
         return view('admin.m-produk.list-produk', [
             'title' => "Admin | Dashboard",
