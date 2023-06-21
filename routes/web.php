@@ -59,6 +59,7 @@ Route::prefix('admin/dashboard/transaksi')
         Route::get('/diproses', [AdminTransaksiController::class, 'list_transaksi_diproses']);
         Route::get('/dikirim', [AdminTransaksiController::class, 'list_transaksi_dikirim']);
         Route::get('/selesai', [AdminTransaksiController::class, 'list_transaksi_selesai']);
+        Route::get('/detail/{no_transaksi}', [AdminTransaksiController::class, 'detail_transaksi']);
     });
 
 

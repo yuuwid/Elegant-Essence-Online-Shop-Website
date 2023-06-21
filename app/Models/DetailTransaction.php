@@ -19,6 +19,7 @@ class DetailTransaction extends Model
         'id_transaction',
         'id_variant',
         'qty',
+        'discount',
     ];
 
 

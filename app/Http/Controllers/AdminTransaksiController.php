@@ -48,19 +48,39 @@ class AdminTransaksiController extends Controller
         ]);
     }
 
+    public function detail_transaksi($kode_transaksi)
+    {
+        $kode_transaksi = substr($kode_transaksi, 7);
+        $kode_transaksi = substr($kode_transaksi, 0, 5);
+        $kode_transaksi = ltrim($kode_transaksi, "0");
+        $id_transaksi = $kode_transaksi;
+
+        $transaction = Transaction::with(['delivery', 'user', 'detail_transaction', 'transaction_track.status_transaction', 'detail_transaction.product', 'detail_transaction.product.images', 'detail_transaction.variant', 'detail_transaction.variant.size', 'detail_transaction.variant.color', 'delivery.address', 'delivery.expedition'])
+            ->where('id_transaction',  $id_transaksi)->get()->first();
+
+        return view('admin.transaksi.detail_transaksi', [
+            'title' => "Admin | Detail Transaksi",
+            'transaction' => $transaction,
+        ]);
+    }
+
     public function list_transaksi_baru(Request $request)
     {
+        return $this->list_transaksi($request);
     }
 
     public function list_transaksi_diproses(Request $request)
     {
+        return $this->list_transaksi($request);
     }
 
     public function list_transaksi_dikirim(Request $request)
     {
+        return $this->list_transaksi($request);
     }
 
     public function list_transaksi_selesai(Request $request)
     {
+        return $this->list_transaksi($request);
     }
 }

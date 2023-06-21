@@ -96,6 +96,9 @@
                 <thead class="text-sm uppercase bg-e2-blue-base text-white">
                     <tr>
                         <th scope="col" class="px-6 py-3">
+                            Kode Transaksi
+                        </th>
+                        <th scope="col" class="px-6 py-3">
                             Tanggal Transaksi
                         </th>
                         <th scope="col" class="px-6 py-3">
@@ -116,8 +119,20 @@
                         </tr>
                     @else
                         @foreach ($transactions as $tr)
-                            <tr class="bg-white border-b">
+                            @php
+                                $dateTime = explode(' ', $tr->created_at);
+                                $date = str_replace('-', '', $dateTime[0]);
+                                $time = str_replace(':', '', $dateTime[1]);
+
+                                // no_transaksi = waktu + " " + id_transaction + " " + tanggal
+                                $kode_transaksi = $time . ' ' . str_pad($tr->id_transaction, 6, "0", STR_PAD_LEFT) . " " . $date;
+                            @endphp
+
+                            <tr class="bg-white border-b hover:bg-e2-blue-100">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                    {{ $kode_transaksi }}
+                                </th>
+                                <th class="px-6 py-4">
                                     {{ $tr->created_at }}
                                 </th>
                                 <td class="px-6 py-4">
@@ -127,7 +142,10 @@
                                     {{ $tr->transaction_track->last()->status_transaction->status }}
                                 </td>
                                 <td class="px-6 py-4">
-                                    <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
+                                    <a href="/admin/dashboard/transaksi/detail/{{ str_replace(' ', '', $kode_transaksi) }}"
+                                        class="font-medium text-white bg-e2-green hover:bg-emerald-800 rounded px-1.5 py-1">
+                                        <i class="bi bi-info"></i>
+                                </a>
                                 </td>
                             </tr>
                         @endforeach

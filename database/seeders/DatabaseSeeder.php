@@ -35,7 +35,8 @@ class DatabaseSeeder extends Seeder
             TransactionSeeder::class,
             TransactionTrackSeeder::class,
             DetailTransactionSeeder::class,
-            ReviewSeeder::class
+            ReviewSeeder::class,
+            ImageSeeder::class
         ]);
     }
 }

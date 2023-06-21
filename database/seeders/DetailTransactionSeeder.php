@@ -22,13 +22,13 @@ class DetailTransactionSeeder extends Seeder
         $n_product = Product::all()->count();
 
         for ($i = 1; $i < $n_transaction; $i++) {
-            $n_buy = random_int(2, 10);
+            $n_buy = random_int(2, 5);
 
             for ($j = 1; $j <= $n_buy; $j++) {
                 $id_product = Product::where('id_product', random_int(1, $n_product))
                     ->get('id_product')->first()['id_product'];
 
-                $variant = Variant::where('id_product', $id_product)->get('id_variant');
+                $variant = Variant::where('id_product', $id_product)->get(['id_variant', 'discount']);
 
                 foreach ($variant as $v) {
                     DetailTransaction::create([
@@ -36,6 +36,7 @@ class DetailTransactionSeeder extends Seeder
                         'id_transaction' => $i,
                         'id_variant' => $v['id_variant'],
                         'qty' => random_int(1, 5),
+                        'discount' => $v['discount'],
                     ]);
                 }
 

@@ -27,6 +27,7 @@ class DeliverySeeder extends Seeder
             Delivery::create([
                 'id_expedition' => random_int(1, 9),
                 'recipient_name' => $faker->name(),
+                'recipient_phone_number' => $faker->phoneNumber(),
                 'id_address' => random_int(1, $n_address),
             ]);
         }

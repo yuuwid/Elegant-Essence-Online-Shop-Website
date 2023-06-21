@@ -70,7 +70,7 @@
                     </thead>
                     <tbody>
                         @foreach ($products as $p)
-                            <tr class="bg-white border-b">
+                            <tr class="bg-white border-b hover:bg-e2-blue-100">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     {{ $p->product_name }}
                                 </th>

@@ -26,8 +26,8 @@ class AddressSeeder extends Seeder
             for ($j = 1; $j <= $n_address; $j++) {
                 Address::create([
                     'id_user' => $i,
-                    'street_name' => $faker->streetName(),
-                    'subdistrict' => $faker->citySuffix(),
+                    'street_name' => $faker->streetAddress(),
+                    'subdistrict' => $faker->streetName(),
                     'zip_code' => $faker->postcode(),
                     'city' => $faker->city(),
                     'province' => $faker->state(),
