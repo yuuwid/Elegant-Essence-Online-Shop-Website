@@ -21,11 +21,17 @@ use App\Http\Controllers\ColorSizeManagementController;
 |
 */
 
+Route::get('/admin/login', [AuthAdminController::class, 'login_form'])
+    ->name('admin.login');
+Route::post('/admin/auth/login', [AuthAdminController::class, 'handle_login'])
+    ->name('admin.handle.login');
+Route::get('/admin/auth/logout', [AuthAdminController::class, 'handle_logout'])
+    ->name('admin.handle.logout');
+
 // ADMIN AUTHENTICATE
 Route::prefix('admin')
     ->name('admin.')
     ->group(function () {
-
         Route::get('/login', [AuthAdminController::class, 'login_form'])
             ->name('login');
 
@@ -200,3 +206,11 @@ Route::prefix('admin/dashboard/list-colors-sizes')
         Route::post('/h/add/color', [ColorSizeManagementController::class, 'add_color'])
             ->name('h.add_color');
     });
+
+
+Route::get('/login', function () {
+    return view('auth.user.login.index');
+});
+Route::get('/registrasi', function () {
+    return view('auth.user.registrasi.index');
+});
