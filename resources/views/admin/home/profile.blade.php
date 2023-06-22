@@ -5,16 +5,40 @@
 @section('content')
 
     @include('admin.components.sidebar')
+
+    @if (session('success'))
+        <script>
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+
+            Toast.fire({
+                icon: 'success',
+                title: 'Berhasil mengupdate profile'
+            })
+        </script>
+    @endif
+
     <div class="p-4 sm:ml-64 mt-16 flex justify-center">
         <div class="w-full max-w-6xl mt-12 mx-8 my-4 px-2 py-8 rounded-md shadow-md border">
-            <form class="flex flex-col xl:flex-row">
+            <form class="flex flex-col xl:flex-row" method="POST" action="/admin/profile/edit" enctype="multipart/form-data">
+                @csrf
                 <div class="w-full xl:w-1/4 flex justify-center">
 
                     <div class="px-6">
                         <div
                             class="w-32 h-32 overflow-hidden rounded-full bg-cover flex flex-col items-center justify-center">
                             <label for="profilePhotoFile" class="text-gray-500">
-                                <div id="uploadIcon" class="w-full h-full hidden items-center justify-center cursor-pointer">
+                                <div id="uploadIcon"
+                                    class="w-full h-full hidden items-center justify-center cursor-pointer">
                                     <i class="bi bi-upload text-4xl"></i>
                                 </div>
                                 <input type="file" value="" name="profile_photo" id="profilePhotoFile"
@@ -42,10 +66,10 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="default-input" class="block mb-2 text-sm font-bold text-gray-900">
+                        <label for="name-input" class="block mb-2 text-sm font-bold text-gray-900">
                             Nama Lengkap
                         </label>
-                        <input type="text" name="full_name" id="default-input" value="{{ $user->full_name }}"
+                        <input type="text" name="full_name" id="name-input" value="{{ $user->full_name }}"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
                     </div>
 
@@ -53,17 +77,20 @@
 
                     <div class="mb-3 flex flex-col lg:flex-row gap-6">
                         <div class="flex-1">
-                            <label for="default-input" class="block mb-2 text-sm font-bold text-gray-900">
+                            <label for="nip-input" class="block mb-2 text-sm font-bold text-gray-900">
                                 NIP
                             </label>
-                            <input type="text" name="nip" id="default-input" value="{{ $user->nip }}"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                            <input type="text" name="" id="nip-input" value="{{ $user->nip }}"
+                                class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                disabled>
+                            <input type="hidden" name="nip" value="{{ $user->nip }}"
+                                class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <div class="flex-1">
-                            <label for="default-input" class="block mb-2 text-sm font-bold text-gray-900">
+                            <label for="nik-input" class="block mb-2 text-sm font-bold text-gray-900">
                                 NIK
                             </label>
-                            <input type="text" name="nik" id="default-input" value="{{ $user->nik }}"
+                            <input type="text" name="nik" id="nik-input" value="{{ $user->nik }}"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
                         </div>
                     </div>
@@ -72,10 +99,10 @@
 
                     <div class="flex flex-col lg:flex-row">
                         <div class="mb-3 flex-1">
-                            <label for="default-input" class="block mb-2 text-sm font-bold text-gray-900">
+                            <label for="password-input" class="block mb-2 text-sm font-bold text-gray-900">
                                 Password
                             </label>
-                            <input type="password" name="password" id="default-input" value="" placeholder="*******"
+                            <input type="password" name="password" id="password-input" value="" placeholder="*******"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
                         </div>
                         <div class="flex-1"></div>

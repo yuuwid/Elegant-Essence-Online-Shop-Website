@@ -21,7 +21,6 @@ class AdminSeeder extends Seeder
             'nip' => "123456",
             'password' => bcrypt('123456'),
             'nik' => '1234567890',
-            'profile_photo' => 'images/root/no-image.png',
         ]);
 
     }

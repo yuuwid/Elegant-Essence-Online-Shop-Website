@@ -45,7 +45,9 @@
 
     <!-- owl carousel -->
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     @yield('setup')
 
@@ -60,7 +62,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     {{-- owl carousel --}}
-    <script src="{{ asset('js/code.jquery.com_jquery-3.7.0.min.js') }}"></script>
+    {{-- <script src="{{ asset('js/code.jquery.com_jquery-3.7.0.min.js') }}"></script> --}}
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <script>
         $(document).ready(function() {
