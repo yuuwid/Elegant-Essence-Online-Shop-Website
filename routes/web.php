@@ -217,7 +217,7 @@ Route::view('/user/produk', 'user.product_detail')->name('products_detail');
 Route::view('/user/cart', 'user.cart')->name('cart');
 
 Route::view('/user/wishlist', 'user.wishlist')->name('wishlist');
-=======
+
 Route::get('/login', function () {
     return view('auth.user.login.index');
 });

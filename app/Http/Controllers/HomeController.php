@@ -12,7 +12,6 @@ class HomeController extends Controller
     {
         $products = Product::with('images')->latest()->limit(20)->get();
 
-        return $products;
         return view('user.home.landingpage');
     }
 }
