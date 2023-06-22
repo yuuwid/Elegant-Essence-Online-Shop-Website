@@ -12,11 +12,11 @@
             <!-- Statistics Cards -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-4 gap-4">
                 <div
-                    class="bg-blue-500 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 dark:border-gray-600 text-white font-medium group">
+                    class="bg-blue-500 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 text-white font-medium group">
                     <div
                         class="flex justify-center items-center w-14 h-14 bg-white rounded-full transition-all duration-300 transform group-hover:rotate-12">
                         <svg width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                            class="stroke-current text-blue-800 dark:text-gray-800 transform transition-transform duration-500 ease-in-out">
+                            class="stroke-current text-blue-800 transform transition-transform duration-500 ease-in-out">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
                             </path>
@@ -28,11 +28,11 @@
                     </div>
                 </div>
                 <div
-                    class="bg-red-500 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 dark:border-gray-600 text-white font-medium group">
+                    class="bg-red-500 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 text-white font-medium group">
                     <div
                         class="flex justify-center items-center w-14 h-14 bg-white rounded-full transition-all duration-300 transform group-hover:rotate-12">
                         <svg width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                            class="stroke-current text-blue-800 dark:text-gray-800 transform transition-transform duration-500 ease-in-out">
+                            class="stroke-current text-blue-800 transform transition-transform duration-500 ease-in-out">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
                         </svg>
@@ -43,11 +43,11 @@
                     </div>
                 </div>
                 <div
-                    class="bg-purple-300 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 dark:border-gray-600 text-white font-medium group">
+                    class="bg-purple-300 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 text-white font-medium group">
                     <div
                         class="flex justify-center items-center w-14 h-14 bg-white rounded-full transition-all duration-300 transform group-hover:rotate-12">
                         <svg width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                            class="stroke-current text-blue-800 dark:text-gray-800 transform transition-transform duration-500 ease-in-out">
+                            class="stroke-current text-blue-800 transform transition-transform duration-500 ease-in-out">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                         </svg>
@@ -58,11 +58,11 @@
                     </div>
                 </div>
                 <div
-                    class="bg-yellow-200 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 dark:border-gray-600 text-white font-medium group">
+                    class="bg-yellow-200 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 text-white font-medium group">
                     <div
                         class="flex justify-center items-center w-14 h-14 bg-white rounded-full transition-all duration-300 transform group-hover:rotate-12">
                         <svg width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                            class="stroke-current text-blue-800 dark:text-gray-800 transform transition-transform duration-500 ease-in-out">
+                            class="stroke-current text-blue-800 transform transition-transform duration-500 ease-in-out">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
                             </path>
@@ -79,16 +79,15 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 p-4 gap-4">
 
                 <!-- Activity -->
-                <div
-                    class="relative flex flex-col min-w-0 mb-4 lg:mb-0 break-words bg-gray-50 dark:bg-gray-800 w-full shadow-lg rounded">
+                <div class="relative flex flex-col min-w-0 mb-4 lg:mb-0 break-words bg-gray-50 w-full shadow-lg rounded">
                     <div class="rounded-t mb-0 px-0 border-0">
                         <div class="flex flex-wrap items-center px-4 py-2">
                             <div class="relative w-full max-w-full flex-grow flex-1">
-                                <h3 class="font-semibold text-base text-gray-900 dark:text-gray-50">Activity</h3>
+                                <h3 class="font-semibold text-base text-gray-900 ">Activity</h3>
                             </div>
                             <div class="relative w-full max-w-full flex-grow flex-1 text-right">
                                 <button
-                                    class="bg-blue-500 dark:bg-gray-100 text-white active:bg-blue-600 dark:text-gray-800 dark:active:text-gray-700 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                    class="bg-blue-500 text-white active:bg-blue-600  text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                     type="button">See all</button>
                             </div>
                         </div>
@@ -97,20 +96,21 @@
                                 <thead>
                                     <tr>
                                         <th
-                                            class="px-4 bg-gray-100 dark:bg-gray-600 text-gray-500 dark:text-gray-100 align-middle border border-solid border-gray-200 dark:border-gray-500 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                            class="px-4 bg-gray-100 text-gray-500 align-middle border border-solid border-gray-200 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                                             Referral</th>
                                         <th
-                                            class="px-4 bg-gray-100 dark:bg-gray-600 text-gray-500 dark:text-gray-100 align-middle border border-solid border-gray-200 dark:border-gray-500 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                            class="px-4 bg-gray-100 text-gray-500 align-middle border border-solid border-gray-200 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                                             Visitors</th>
                                         <th
-                                            class="px-4 bg-gray-100 dark:bg-gray-600 text-gray-500 dark:text-gray-100 align-middle border border-solid border-gray-200 dark:border-gray-500 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left min-w-140-px">
+                                            class="px-4 bg-gray-100 text-gray-500 align-middle border border-solid border-gray-200 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left min-w-140-px">
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="text-gray-700 dark:text-gray-100">
+                                    <tr class="text-gray-700 ">
                                         <th
-                                            class="border-t-0 px-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
+                                            class="border-t-0
+                                        px-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
                                             Facebook</th>
                                         <td
                                             class="border-t-0 px-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
@@ -129,10 +129,11 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="text-gray-700 dark:text-gray-100">
+                                    <tr class="text-gray-700" >
                                         <th
-                                            class="border-t-0 px-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
-                                            Twitter</th>
+                                            class="border-t-0
+                                        px-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
+                                        Twitter</th>
                                         <td
                                             class="border-t-0 px-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                             3,380</td>
@@ -150,10 +151,11 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="text-gray-700 dark:text-gray-100">
+                                    <tr class="text-gray-700" >
                                         <th
-                                            class="border-t-0 px-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
-                                            Instagram</th>
+                                            class="border-t-0
+                                        px-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
+                                        Instagram</th>
                                         <td
                                             class="border-t-0 px-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                             4,105</td>
@@ -171,10 +173,11 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="text-gray-700 dark:text-gray-100">
+                                    <tr class="text-gray-700" >
                                         <th
-                                            class="border-t-0 px-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
-                                            Google</th>
+                                            class="border-t-0
+                                        px-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
+                                        Google</th>
                                         <td
                                             class="border-t-0 px-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                             4,985</td>
@@ -192,10 +195,11 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="text-gray-700 dark:text-gray-100">
+                                    <tr class="text-gray-700" >
                                         <th
-                                            class="border-t-0 px-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
-                                            Linkedin</th>
+                                            class="border-t-0
+                                        px-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
+                                        Linkedin</th>
                                         <td
                                             class="border-t-0 px-4 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                             2,250</td>
@@ -221,22 +225,21 @@
                 <!-- Activity -->
 
                 <!-- Latest spending -->
-                <div
-                    class="relative flex flex-col min-w-0 break-words bg-gray-50 dark:bg-gray-800 w-full shadow-lg rounded">
+                <div class="relative flex flex-col min-w-0 break-words bg-gray-50 w-full shadow-lg rounded">
                     <div class="rounded-t mb-0 px-0 border-0">
                         <div class="flex flex-wrap items-center px-4 py-2">
                             <div class="relative w-full max-w-full flex-grow flex-1">
-                                <h3 class="font-semibold text-base text-gray-900 dark:text-gray-50">Latest Spending</h3>
+                                <h3 class="font-semibold text-base text-gray-900 ">Latest Spending</h3>
                             </div>
                             <div class="relative w-full max-w-full flex-grow flex-1 text-right">
                                 <button
-                                    class="bg-blue-500 dark:bg-gray-100 text-white active:bg-blue-600 dark:text-gray-800 dark:active:text-gray-700 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                    class="bg-blue-500 text-white active:bg-blue-600  text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                     type="button">See all</button>
                             </div>
                         </div>
                         <div class="block w-full">
                             <div
-                                class="px-4 bg-gray-100 dark:bg-gray-600 text-gray-500 dark:text-gray-100 align-middle border border-solid border-gray-200 dark:border-gray-500 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                class="px-4 bg-gray-100 text-gray-500 align-middle border border-solid border-gray-200 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                                 Today
                             </div>
                             <ul class="my-1">
@@ -249,16 +252,16 @@
                                         </svg>
                                     </div>
                                     <div
-                                        class="flex-grow flex items-center border-b border-gray-100 dark:border-gray-400 text-sm text-gray-600 dark:text-gray-100 py-2">
+                                        class="flex-grow flex items-center border-b border-gray-100 text-sm text-gray-600 py-2">
                                         <div class="flex-grow flex justify-between items-center">
                                             <div class="self-center">
-                                                <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-50 dark:hover:text-gray-100"
-                                                    href="#0" style="outline: none;">Nick Mark</a> mentioned <a
-                                                    class="font-medium text-gray-800 dark:text-gray-50 dark:hover:text-gray-100"
-                                                    href="#0" style="outline: none;">Sara Smith</a> in a new post
+                                                <a class="font-medium text-gray-800 hover:text-gray-900  " href="#0"
+                                                    style="outline: none;">Nick Mark</a> mentioned <a
+                                                    class="font-medium text-gray-800  " href="#0"
+                                                    style="outline: none;">Sara Smith</a> in a new post
                                             </div>
                                             <div class="flex-shrink-0 ml-2">
-                                                <a class="flex items-center font-medium text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500"
+                                                <a class="flex items-center font-medium text-blue-500 hover:text-blue-600  "
                                                     href="#0" style="outline: none;">
                                                     View<span><svg width="20" height="20" viewBox="0 0 20 20"
                                                             fill="currentColor"
@@ -279,18 +282,16 @@
                                             </path>
                                         </svg>
                                     </div>
-                                    <div
-                                        class="flex-grow flex items-center border-gray-100 text-sm text-gray-600 dark:text-gray-50 py-2">
+                                    <div class="flex-grow flex items-center border-gray-100 text-sm text-gray-600  py-2">
                                         <div class="flex-grow flex justify-between items-center">
                                             <div class="self-center">
-                                                The post <a
-                                                    class="font-medium text-gray-800 dark:text-gray-50 dark:hover:text-gray-100"
-                                                    href="#0" style="outline: none;">Post Name</a> was removed by <a
-                                                    class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-50 dark:hover:text-gray-100"
-                                                    href="#0" style="outline: none;">Nick Mark</a>
+                                                The post <a class="font-medium text-gray-800  " href="#0"
+                                                    style="outline: none;">Post Name</a> was removed by <a
+                                                    class="font-medium text-gray-800 hover:text-gray-900  " href="#0"
+                                                    style="outline: none;">Nick Mark</a>
                                             </div>
                                             <div class="flex-shrink-0 ml-2">
-                                                <a class="flex items-center font-medium text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500"
+                                                <a class="flex items-center font-medium text-blue-500 hover:text-blue-600  "
                                                     href="#0" style="outline: none;">
                                                     View<span><svg width="20" height="20" viewBox="0 0 20 20"
                                                             fill="currentColor"
@@ -306,7 +307,7 @@
                                 </li>
                             </ul>
                             <div
-                                class="px-4 bg-gray-100 dark:bg-gray-600 text-gray-500 dark:text-gray-100 align-middle border border-solid border-gray-200 dark:border-gray-500 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                class="px-4 bg-gray-100 text-gray-500 align-middle border border-solid border-gray-200 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                                 Yesterday
                             </div>
                             <ul class="my-1">
@@ -318,18 +319,16 @@
                                             </path>
                                         </svg>
                                     </div>
-                                    <div
-                                        class="flex-grow flex items-center border-gray-100 text-sm text-gray-600 dark:text-gray-50 py-2">
+                                    <div class="flex-grow flex items-center border-gray-100 text-sm text-gray-600  py-2">
                                         <div class="flex-grow flex justify-between items-center">
                                             <div class="self-center">
-                                                <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-50 dark:hover:text-gray-100"
-                                                    href="#0" style="outline: none;">240+</a> users have subscribed
-                                                to <a
-                                                    class="font-medium text-gray-800 dark:text-gray-50 dark:hover:text-gray-100"
-                                                    href="#0" style="outline: none;">Newsletter #1</a>
+                                                <a class="font-medium text-gray-800 hover:text-gray-900  " href="#0"
+                                                    style="outline: none;">240+</a> users have subscribed
+                                                to <a class="font-medium text-gray-800  " href="#0"
+                                                    style="outline: none;">Newsletter #1</a>
                                             </div>
                                             <div class="flex-shrink-0 ml-2">
-                                                <a class="flex items-center font-medium text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500"
+                                                <a class="flex items-center font-medium text-blue-500 hover:text-blue-600  "
                                                     href="#0" style="outline: none;">
                                                     View<span><svg width="20" height="20" viewBox="0 0 20 20"
                                                             fill="currentColor"
@@ -363,16 +362,18 @@
                         <table class="w-full">
                             <thead>
                                 <tr
-                                    class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                                    class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b  bg-gray-50 ">
                                     <th class="px-4 py-3">Client</th>
                                     <th class="px-4 py-3">Amount</th>
                                     <th class="px-4 py-3">Status</th>
                                     <th class="px-4 py-3">Date</th>
                                 </tr>
                             </thead>
-                            <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
+                            <tbody class="bg-white divide-y">
                                 <tr
-                                    class="bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900 text-gray-700 dark:text-gray-400">
+                                    class="bg-gray-50
+                                hover:bg-gray-100
+                                text-gray-700 ">
                                     <td class="px-4 py-3">
                                         <div class="flex items-center text-sm">
                                             <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
@@ -385,20 +386,19 @@
                                             </div>
                                             <div>
                                                 <p class="font-semibold">Hans Burger</p>
-                                                <p class="text-xs text-gray-600 dark:text-gray-400">10x Developer</p>
+                                                <p class="text-xs text-gray-600 ">10x Developer</p>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="px-4 py-3 text-sm">$855.85</td>
                                     <td class="px-4 py-3 text-xs">
                                         <span
-                                            class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100">
+                                            class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full ">
                                             Approved </span>
                                     </td>
                                     <td class="px-4 py-3 text-sm">15-01-2021</td>
                                 </tr>
-                                <tr
-                                    class="bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900 text-gray-700 dark:text-gray-400">
+                                <tr class="bg-gray-50 hover:bg-gray-100  text-gray-700 ">
                                     <td class="px-4 py-3">
                                         <div class="flex items-center text-sm">
                                             <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
@@ -411,7 +411,7 @@
                                             </div>
                                             <div>
                                                 <p class="font-semibold">Jolina Angelie</p>
-                                                <p class="text-xs text-gray-600 dark:text-gray-400">Unemployed</p>
+                                                <p class="text-xs text-gray-600 ">Unemployed</p>
                                             </div>
                                         </div>
                                     </td>
@@ -423,8 +423,7 @@
                                     </td>
                                     <td class="px-4 py-3 text-sm">23-03-2021</td>
                                 </tr>
-                                <tr
-                                    class="bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900 text-gray-700 dark:text-gray-400">
+                                <tr class="bg-gray-50 hover:bg-gray-100  text-gray-700 ">
                                     <td class="px-4 py-3">
                                         <div class="flex items-center text-sm">
                                             <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
@@ -437,20 +436,19 @@
                                             </div>
                                             <div>
                                                 <p class="font-semibold">Dave Li</p>
-                                                <p class="text-xs text-gray-600 dark:text-gray-400">Influencer</p>
+                                                <p class="text-xs text-gray-600 ">Influencer</p>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="px-4 py-3 text-sm">$775.45</td>
                                     <td class="px-4 py-3 text-xs">
                                         <span
-                                            class="px-2 py-1 font-semibold leading-tight text-gray-700 bg-gray-100 rounded-full dark:text-gray-100 dark:bg-gray-700">
+                                            class="px-2 py-1 font-semibold leading-tight text-gray-700 bg-gray-100 rounded-full ">
                                             Expired </span>
                                     </td>
                                     <td class="px-4 py-3 text-sm">09-02-2021</td>
                                 </tr>
-                                <tr
-                                    class="bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900 text-gray-700 dark:text-gray-400">
+                                <tr class="bg-gray-50 hover:bg-gray-100  text-gray-700 ">
                                     <td class="px-4 py-3">
                                         <div class="flex items-center text-sm">
                                             <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
@@ -463,20 +461,19 @@
                                             </div>
                                             <div>
                                                 <p class="font-semibold">Rulia Joberts</p>
-                                                <p class="text-xs text-gray-600 dark:text-gray-400">Actress</p>
+                                                <p class="text-xs text-gray-600 ">Actress</p>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="px-4 py-3 text-sm">$1276.75</td>
                                     <td class="px-4 py-3 text-xs">
                                         <span
-                                            class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100">
+                                            class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full ">
                                             Approved </span>
                                     </td>
                                     <td class="px-4 py-3 text-sm">17-04-2021</td>
                                 </tr>
-                                <tr
-                                    class="bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900 text-gray-700 dark:text-gray-400">
+                                <tr class="bg-gray-50 hover:bg-gray-100  text-gray-700 ">
                                     <td class="px-4 py-3">
                                         <div class="flex items-center text-sm">
                                             <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
@@ -489,14 +486,14 @@
                                             </div>
                                             <div>
                                                 <p class="font-semibold">Hitney Wouston</p>
-                                                <p class="text-xs text-gray-600 dark:text-gray-400">Singer</p>
+                                                <p class="text-xs text-gray-600 ">Singer</p>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="px-4 py-3 text-sm">$863.45</td>
                                     <td class="px-4 py-3 text-xs">
                                         <span
-                                            class="px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-full dark:text-red-100 dark:bg-red-700">
+                                            class="px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-full ">
                                             Denied </span>
                                     </td>
                                     <td class="px-4 py-3 text-sm">11-01-2021</td>
@@ -504,9 +501,10 @@
                             </tbody>
                         </table>
                     </div>
-                    <div
-                        class="grid px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
-                        <span class="flex items-center col-span-3"> Showing 21-30 of 100 </span>
+                    <div class="grid px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t  bg-gray-50 sm:grid-cols-9  >
+                        <span class="flex
+                        items-center col-span-3">
+                        Showing 21-30 of 100 </span>
                         <span class="col-span-2"></span>
                         <!-- Pagination -->
                         <span class="flex col-span-4 mt-2 sm:mt-auto sm:justify-end">
@@ -533,7 +531,7 @@
                                     </li>
                                     <li>
                                         <button
-                                            class="px-3 py-1 text-white dark:text-gray-800 transition-colors duration-150 bg-blue-600 dark:bg-gray-100 border border-r-0 border-blue-600 dark:border-gray-100 rounded-md focus:outline-none focus:shadow-outline-purple">3</button>
+                                            class="px-3 py-1 text-white transition-colors duration-150 bg-blue-600 border border-r-0 border-blue-600 rounded-md focus:outline-none focus:shadow-outline-purple">3</button>
                                     </li>
                                     <li>
                                         <button

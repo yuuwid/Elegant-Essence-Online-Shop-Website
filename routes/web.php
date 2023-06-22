@@ -53,6 +53,9 @@ Route::prefix('admin')
 
         Route::get('/profile', [AdminController::class, 'profile'])
             ->name('profile');
+
+        Route::post('/profile/edit', [AdminController::class, 'edit_profile'])
+            ->name('edit-profile');
     });
 
 
