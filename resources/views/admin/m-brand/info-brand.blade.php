@@ -61,10 +61,16 @@
                     </div>
                 @endif
 
+                <a href="/admin/dashboard/list-brand" class="text-sm hover:underline hover:text-e2-green">
+                    <i class="bi bi-chevron-left"></i>
+                    Kembali
+                </a>
                 <form method="POST" action="/admin/dashboard/list-brand/h/update/{{ $brand->slug_brand }}"
                     enctype="multipart/form-data">
+
                     @csrf
                     <div class="flex justify-center">
+
                         <div class="ms-6">
                             <div
                                 @if ($errors->has('logo')) class="w-32 h-32 border-2 border-dashed border-red-600 flex flex-col items-center justify-center"

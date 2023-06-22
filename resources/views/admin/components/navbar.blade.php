@@ -17,8 +17,9 @@
                 </button>
                 <a href="/" class="flex ml-2 md:mr-24">
                     <img src="/images/root/logo.png" class="h-8 mr-3" alt="E2 Logo" />
-                    <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap">Elegance
-                        Essence</span>
+                    <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap">
+                        Elegance Essence
+                    </span>
                 </a>
             </div>
             <div class="flex items-center">
@@ -47,7 +48,7 @@
                         </div>
                         <ul class="py-1" role="none">
                             <li>
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                <a href="/admin/profile" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                     role="menuitem">
                                     Profil
                                 </a>
