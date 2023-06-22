@@ -27,6 +27,7 @@
 
     {{-- Tailwind CSS --}}
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 
 
     {{-- Bootstrap Icon --}}
@@ -42,6 +43,10 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
         crossorigin="anonymous"></script>
 
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('owl.theme.default.min.css') }}">
+
     @yield('setup')
 
 </head>
@@ -54,9 +59,64 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    {{-- owl carousel --}}
+    <script src="{{ asset('js/code.jquery.com_jquery-3.7.0.min.js') }}"></script>
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 1,
+                    },
+                    1000: {
+                        items: 1,
+                    }
+                }
+            });
+        });
+    </script>
+
     <script>
         AOS.init();
     </script>
+
+
+
+    {{-- script detail produk sisi kiri --}}
+    <script>
+        let currentImage = 0;
+
+        const viewImage = (e, index) => {
+            currentImage = index;
+            document.getElementById('bigImage').src = e.querySelector('img').src;
+        }
+
+        const nextPrevious = (index) => {
+            i = currentImage + index;
+
+            let images = document.getElementById('images').querySelectorAll('img');
+
+            if (i >= images.length || i < 0) return;
+
+            currentImage = i;
+
+            let arr = [];
+
+            images.forEach(element => arr.push(element.src));
+
+            document.getElementById('bigImage').src = arr[currentImage];
+        }
+    </script>
+
 
 
 

@@ -9,6 +9,7 @@ use App\Http\Controllers\BrandManagementController;
 use App\Http\Controllers\ProdukManagementController;
 use App\Http\Controllers\CategoryManagementController;
 use App\Http\Controllers\ColorSizeManagementController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -208,6 +209,15 @@ Route::prefix('admin/dashboard/list-colors-sizes')
     });
 
 
+Route::get('/user', [HomeController::class, 'index'])
+    ->name('landing-page');
+
+Route::view('/user/produk', 'user.product_detail')->name('products_detail');
+
+Route::view('/user/cart', 'user.cart')->name('cart');
+
+Route::view('/user/wishlist', 'user.wishlist')->name('wishlist');
+=======
 Route::get('/login', function () {
     return view('auth.user.login.index');
 });
